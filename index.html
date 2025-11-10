@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
   <button id="theme-toggle" aria-label="Toggle light/dark mode">
     <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -30,6 +31,7 @@
       </g>
     </svg>
   </button>
+
   <header>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <h1>Civic Lens</h1>
@@ -49,16 +51,22 @@
 
   <main>
     <section id="main-content">
+
       <section id="introduction">
-        <h2>Welcome to Civic Lens</h2>
-        <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and
-          truth-driven
-          storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light
-          on
-          the
-          systems that shape our society.</p>
-        <blockquote class="tagline"><strong>“We don't follow the narrative. We follow the facts.”</strong></blockquote>
+        <div class="introduction-container">
+          <h2>Welcome to Civic Lens</h2>
+          <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and
+            truth-driven
+            storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine
+            light
+            on
+            the
+            systems that shape our society.</p>
+          <blockquote class="tagline"><strong>“We don't follow the narrative. We follow the facts.”</strong>
+          </blockquote>
+        </div>
       </section>
+
       <section id="breaking-news">
         <h2>Breaking News</h2>
         <div class="breaking-news-container">
@@ -86,13 +94,14 @@
           </article>
         </div>
       </section>
+
       <section id="featured-articles">
         <h2>Featured Articles</h2>
         <div class="featured-articles-container">
           <article class="featured-article-card">
             <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
             <hr>
-            <p>Former employees speak out about ethical breaches in data privacy and surveillance</p>
+            <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
           </article>
           <article class="featured-article-card">
             <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
@@ -151,40 +160,41 @@
           </article>
         </div>
       </section>
-      <section id="get-alerts"></section>
-      <h2>Stay Informed. Stay Empowered.</h2>
-      <p>Receive text messages with the news you want to know.</p>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
 
-        <label for="mobile">Mobile</label>
-        <input type="text" id="mobile" name="mobile">
-
-        <fieldset>
-          <legend></legend>Notification Preferences</legend>
-          <label><input type="checkbox" name="breaking-news"> Breaking News</label>
-          <label><input type="checkbox" name="politics"> Politics</label>
-          <label><input type="checkbox" name="weather"> Weather</label>
-          <label><input type="checkbox" name="sports"> Sports</label>
-          <label><input type="checkbox" name="entertainment"> Entertainment</label>
-          <label><input type="checkbox" name="world"> World</label>
-          <label><input type="checkbox" name="financial"> Financial</label>
-        </fieldset>
-      </form>
-
+      <section id="get-alerts">
+        <h2>Stay Informed. Stay Empowered.</h2>
+        <p>Receive text messages with the news you want to know.</p>
+        <form id="alerts-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <label for="mobile">Mobile</label>
+          <input type="text" id="mobile" name="mobile">
+          <fieldset>
+            <legend>NOTIFICATION PREFERENCES</legend>
+            <label><input type="checkbox" name="breaking-news"> Breaking News</label>
+            <label><input type="checkbox" name="politics"> Politics</label>
+            <label><input type="checkbox" name="weather"> Weather</label>
+            <label><input type="checkbox" name="sports"> Sports</label>
+            <label><input type="checkbox" name="entertainment"> Entertainment</label>
+            <label><input type="checkbox" name="world"> World</label>
+            <label><input type="checkbox" name="financial"> Financial</label>
+          </fieldset>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </section>
     </section>
-    <!-- Subscribe -->
-    <!-- 
+
     <footer>
-      <h2>Follow Us</h2>
-      <a href="https://twitter.com">Twitter/X</a>
-      <a href="https://instagram.com">Instagram</a>
-      <a href="https://youtube.com">YouTube</a>
-      <a href="https://tiktok.com">TikTok</a>
-      <a href="https://linkedin.com">LinkedIn</a>
-      <p>&copy; 2025 Civic Lens. All rights reserved.</p>
-    </footer> -->
+      <div class="footer-content">
+        <h2>Follow Us</h2>
+        <a href="https://twitter.com">Twitter/X</a>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://youtube.com">YouTube</a>
+        <a href="https://tiktok.com">TikTok</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <p>&copy; 2025 Civic Lens. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script>
       const toggleButton = document.getElementById('theme-toggle');
