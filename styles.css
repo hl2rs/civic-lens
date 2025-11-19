@@ -255,8 +255,8 @@ footer p {
   text-align: center;
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  left: -100px;
 }
 
 #main-content {
@@ -599,6 +599,12 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 10px 15px;
+}
+
+.footer-content{
+background: transparent;
+margin: 0 0;
+width : 70%;
 }
 
 footer a {
